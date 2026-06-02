@@ -1,11 +1,8 @@
 public class Bank{
 
-    private String owner;
     private double balance;
 
-    public Bank(String owner, double balance){
-        this.owner = owner;
-
+    public Bank(double balance){
         if (balance > 0){
             this.balance = balance;
         }
@@ -28,7 +25,7 @@ public class Bank{
     }
 
     public static void main(String[] arg){
-        Bank acc = new Bank("David", 5000);
+        Bank acc = new Bank(5000);
         acc.deposit(6000);
         acc.withdraw(7000);
 
